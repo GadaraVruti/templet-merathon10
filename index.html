@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+
+    <title>V</title>
+    <style>
+       
+       
+            body {
+      margin: 0%;
+       padding: 0%;
+  font-family: Arial Black, sans-serif;
+  
+    }
+    
+ .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	position: unset;
+ }
+ .screen {		
+	height: 700px;
+	width: 470px;	
+	box-shadow: 0px 0px 24px #000000;
+}
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+    
+}
+
+.whitebox{
+background-color: white;
+height: 100px;
+width: 470px;
+top: 0px;
+left: 0px;
+}
+
+.img{
+position: absolute;
+top: 100px;
+left: 0px;
+height: 300px;
+width: 470px;
+z-index: -1;
+}
+
+.semi{
+position: absolute;
+top: 92px;
+left: 357px;
+width: 180px;
+height: 180px;
+background-color: #3f6060e0;
+transform: translate(-50%, -50%);
+border-radius: 0px 0px 150px 150px;
+}
+  
+
+.first{
+    position: absolute;
+background-color: #4A7375;
+height: 110px;
+width: 180px;
+top: 400px;
+right: 25px;
+}
+.second{
+    position: absolute;
+
+background-color: #EB6647;
+height: 110px;
+width: 180px;
+top:510px;
+right: 25px;
+}
+.third{
+    position: absolute;
+
+background-color: #D2E4E4;
+height: 50px;
+width: 180px;
+top: 620px;
+right: 25px;
+}
+.square{
+position: absolute;
+top: 25px;
+left: 20px;
+height: 25px;
+width: 25px;
+background-color: #4D7785;
+border:3.5px solid #0E2F42;
+border-bottom-width: 0;
+border-right-width: 0;
+z-index: 1;
+
+}
+
+.company{
+
+    position: absolute;
+    top: 20px;
+    left: 55px;
+    text-align: center;
+    color: #E96340;
+}
+
+.we{
+    top: 30px;
+    right: 51px;
+    position: absolute;
+    text-align: center;
+    font-size: 27px;
+    color: white;
+    letter-spacing: 1px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.our{
+position: absolute;
+top: 429px;
+left: 72px;
+text-align: start;
+font-size: 16px;
+color: #487475;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.number1{
+position: absolute;
+font-size: 48px;
+top: 450px;
+left: 20px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #E96340;
+
+}
+.number2{
+position: absolute;
+font-size: 48px;
+top: 510px;
+left: 18px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #E96340;
+}
+.number3{
+position: absolute;
+font-size: 48px;
+top: 570px;
+left: 19px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #E96340;
+}
+.service1{
+    position: absolute;
+    top: 462px;
+    left: 68px;
+    font-size: 12px;
+    color: #487475;
+}
+
+.service2{
+    position: absolute;
+    top: 523px;
+    left: 70px;
+    font-size: 12px;
+    color: #487475;
+}
+.service3{
+    position: absolute;
+    top: 583px;
+    left: 70px;
+    font-size: 12px;
+    color: #487475;
+}
+.text1{
+position: absolute;
+font-size:8px;
+color: #000000;
+top: 475px;
+left: 68px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.text2{
+position: absolute;
+font-size:8px;
+color: #000000;
+top: 536px;
+left: 70px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.text3{
+position: absolute;
+font-size:8px;
+color: #000000;
+top: 597px;
+left: 70px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.t1{
+
+    position: absolute;
+    top: 445px;
+    right: 30px;
+    text-align: justify;
+    font-size: 10px;
+    z-index: 1;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.t2{
+
+position: absolute;
+top: 555px;
+right: 35px;
+text-align: justify;
+font-size: 10px;
+z-index: 1;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.t3{
+
+position: absolute;
+top: 638px;
+right: 73px;
+text-align: center;
+font-size: 10px;
+z-index: 1;
+color: #48726E;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.name1{
+position: absolute;
+top: 420px;
+right: 75px;
+font-size: 15px;
+font-family: Arial, Helvetica, sans-serif;
+z-index: 1;
+color: white;
+
+}
+.name2{
+position: absolute;
+top: 530px;
+right: 68px;
+font-size: 15px;
+font-family: Arial, Helvetica, sans-serif;
+z-index: 1;
+color: white;
+
+}
+.footer{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    height: 10px;
+    width: 470px;
+    background-color: #E96340;
+}
+
+
+
+
+
+    @media only screen and (max-width:550px ){
+        body {
+          margin: 0%;
+           padding: 0%;
+      font-family: Arial Black, sans-serif;
+        }
+        
+     .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        position: unset;
+     }
+     .screen {	
+        height: 550px;
+        width: 360px;	
+        box-shadow: 0px 0px 24px #000000;
+        position: absolute;
+    }
+    .screen__content {
+        z-index: 1;
+        position: relative;	
+        height: 100%;
+    }
+    .whitebox{
+background-color: white;
+height: 90px;
+width: 360px;
+top: 0px;
+left: 0px;
+}
+
+.img{
+position: absolute;
+top: 90px;
+left: 0px;
+height: 220px;
+width: 360px;
+z-index: -1;
+}
+
+.semi{
+position: absolute;
+top: 71px;
+left: 275px;
+width: 130px;
+height: 140px;
+background-color: #3f6060e0;
+transform: translate(-50%, -50%);
+border-radius: 0px 0px 150px 150px;
+}
+  
+
+.first{
+    position: absolute;
+background-color: #4A7375;
+height: 80px;
+width: 130px;
+top: 310px;
+right: 19px;
+}
+.second{
+    position: absolute;
+
+background-color: #EB6647;
+height: 80px;
+width: 130px;
+top:390px;
+right: 19px;
+}
+.third{
+    position: absolute;
+
+background-color: #D2E4E4;
+height: 40px;
+width: 130px;
+top: 470px;
+right: 19px;
+}
+.square{
+position: absolute;
+top: 25px;
+left: 20px;
+height: 23px;
+width: 23px;
+background-color: #4D7785;
+border:3.5px solid #0E2F42;
+border-bottom-width: 0;
+border-right-width: 0;
+z-index: 1;
+
+}
+
+.company{
+
+    position: absolute;
+    top: 18px;
+    left: 50px;
+    text-align: center;
+    font-size: 15px;
+    color: #E96340;
+}
+
+.we{
+    top: 20px;
+    right: 35px;
+    position: absolute;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 1px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.our{
+position: absolute;
+top: 330px;
+left: 56px;
+text-align: start;
+font-size: 13px;
+color: #487475;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.number1{
+position: absolute;
+font-size: 40px;
+top: 350px;
+left: 17px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #E96340;
+
+}
+.number2{
+position: absolute;
+font-size: 40px;
+top: 405px;
+left: 16px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #E96340;
+}
+.number3{
+position: absolute;
+font-size: 40px;
+top: 460px;
+left: 16px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #E96340;
+}
+.service1{
+    position: absolute;
+    top: 359px;
+    left: 59px;
+    font-size: 10px;
+    color: #487475;
+}
+
+.service2{
+    position: absolute;
+    top: 416px;
+    left: 59px;
+    font-size: 10px;
+    color: #487475;
+}
+.service3{
+    position: absolute;
+    top: 470px;
+    left: 59px;
+    font-size: 10px;
+    color: #487475;
+}
+.text1{
+position: absolute;
+font-size:6.5px;
+color: #000000;
+top: 370px;
+left: 59px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.text2{
+position: absolute;
+font-size:6.5px;
+color: #000000;
+top: 428px;
+left: 59px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.text3{
+position: absolute;
+font-size:6.5px;
+color: #000000;
+top: 483px;
+left: 59px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.t1{
+
+    position: absolute;
+    top: 345px;
+    right: 22px;
+    text-align: justify;
+    font-size: 7.5px;
+    z-index: 1;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.t2{
+
+position: absolute;
+top: 425px;
+right: 24px;
+text-align: justify;
+font-size: 7.5px;
+z-index: 1;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.t3{
+
+position: absolute;
+top: 482px;
+right: 47px;
+text-align: center;
+font-size: 9px;
+z-index: 1;
+color: #48726E;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.name1{
+position: absolute;
+top: 320px;
+right: 55px;
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+z-index: 1;
+color: white;
+
+}
+.name2{
+position: absolute;
+top: 400px;
+right: 46px;
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+z-index: 1;
+color: white;
+
+}
+.footer{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    height: 10px;
+    width: 360px;
+    background-color: #E96340;
+}
+    
+}
+
+
+        </style>
+</head>
+<body>
+<div class="container">
+<div class="screen">
+    <div class="screen__content">
+      
+<div class="whitebox">  </div>
+<div class="square"> </div>
+<h4 class="company" >COMPANY&nbsp;<h style="color: black; font-weight: lighter; font-family: Arial, Helvetica, sans-serif;">NAME</h></h4>
+<div class="semi"></div>
+<div class="we"> WE ARE <br>YOUR BEST <br>CHOICE</div>
+<img src="image.jpg" class="img">
+
+<div class="our"><b>OUR SERVICES</b></div>
+<div class="number1">01</div>
+<div class="number2">02</div>
+<div class="number3">03</div>
+
+<div class="service1">SERVICES NAME</div>
+<div class="service2">SERVICES NAME</div>
+<div class="service3">SERVICES NAME</div>
+
+<div class="text1">Lorem ipsum dolor sit amet, consectetuer adipiscing <br>elit, sed diam nonummylLorem ipsum dolor sit amet, <br>consectetuer adipiscing elit, sed diam nonummy nich</b></div>
+<div class="text2">Lorem ipsum dolor sit amet, consectetuer adipiscing <br>elit, sed diam nonummylLorem ipsum dolor sit amet, <br>consectetuer adipiscing elit, sed diam nonummy nich</b></div>
+<div class="text3">Lorem ipsum dolor sit amet, consectetuer adipiscing <br>elit, sed diam nonummylLorem ipsum dolor sit amet, <br>consectetuer adipiscing elit, sed diam nonummy nich</b></div>
+
+<div class="t1">Lorem ipsum dolor sit amet, consect-<br>etuer adipiscing elit, sed diamnonum<br>my nibh euismod tincidunt utlacreet<br> dolore Lorem ipsum dolor sitamet</div>
+<div class="t2">Lorem ipsum dolor sit amet, consec <br>tetuer adipiscing elit<br>Lorem ipsum dolor sit amet, consec <br>tetuer adipiscing elit</div>
+<div class="t3">www.example.com</div>
+
+<div class="name1"><b>ABOUT US</b></div>
+<div class="name2"><b>CONTACT US</b></div>
+
+
+<div class="first">  </div>
+<div class="second">  </div>
+<div class="third">  </div>
+
+<div class="footer"> </div>
+
+
+
+</div>
+</div>
+</div>
+
+		</body>
+		</html>
